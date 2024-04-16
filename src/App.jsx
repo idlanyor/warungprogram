@@ -1,3 +1,4 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Card from "./Components/Card"
 import Navbar from "./Components/Navbar"
 import Section from "./Components/Section"
@@ -5,11 +6,13 @@ import Section from "./Components/Section"
 function App() {
 
   return (
-    <>
-      <Navbar />
-      <Card />
-      <Section />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Navbar />}>
+          <Route index element={<><Card /><Section /></>} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
 
