@@ -1,24 +1,115 @@
+import { Carousel, Typography, Button } from "@material-tailwind/react"
 export default function Card() {
     return (
-        <div className="card flex justify-center items-center relative max-w-screen-2xl h-screen">
-            <div className="absolute top-0 left-0 w-full h-full bg-cover bg-center" style={{
-                backgroundImage: "url(https://i.ibb.co/7yQhcDG/wp.jpg)",
-                filter: "brightness(0.4)"
-            }}></div>
-            <div className="left-1/2 space-y-5 px-8 transform -translate-x-1/2 -translate-y-1/2 text-center text-white w-full z-10 animate__animated animate__fadeInUp">
-                <h1 className="text-3xl font-extrabold">Warung Program</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus cum aspernatur mollitia nostrum praesentium veniam tempore molestias quae optio nisi, quo nam ducimus amet ratione corporis accusamus vitae fuga maiores accusantium eos officia eveniet dolor distinctio. Quae velit temporibus error officia laudantium facilis, expedita asperiores excepturi delectus ad! Asperiores, eaque.
-                    lorem vestibulum, nec sodales nisi ultricies.</p>
-                <button type="button"
-                    className="text-white bg-[#00008B] hover:bg-[#1da1f2]/90 focus:ring-4 focus:outline-none focus:ring-[#1da1f2]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#1da1f2]/55 me-2 mb-2">
-                    Learn More&emsp;
-                    <svg className="w-6 h-6 text-white" aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
-                            d="M1 5h12m0 0L9 1m4 4L9 9" />
-                    </svg>
-                </button>
+        <Carousel className="rounded-xl">
+            <div className="relative h-full w-full">
+                <img
+                    src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2560&q=80"
+                    alt="image 1"
+                    className="h-full w-full object-cover"
+                />
+                <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/75">
+                    <div className="w-3/4 text-center md:w-2/4">
+                        <Typography
+                            variant="h1"
+                            color="white"
+                            className="mb-4 text-3xl md:text-4xl lg:text-5xl"
+                        >
+                            The Beauty of Nature
+                        </Typography>
+                        <Typography
+                            variant="lead"
+                            color="white"
+                            className="mb-12 opacity-80"
+                        >
+                            It is not so much for its beauty that the forest makes a claim
+                            upon men&apos;s hearts, as for that subtle something, that quality
+                            of air that emanation from old trees, that so wonderfully changes
+                            and renews a weary spirit.
+                        </Typography>
+                        <div className="flex justify-center gap-2">
+                            <Button size="lg" color="white">
+                                Explore
+                            </Button>
+                            <Button size="lg" color="white" variant="text">
+                                Gallery
+                            </Button>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+            <div className="relative h-full w-full">
+                <img
+                    src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
+                    alt="image 2"
+                    className="h-full w-full object-cover"
+                />
+                <div className="absolute inset-0 grid h-full w-full items-center bg-black/75">
+                    <div className="w-3/4 pl-12 md:w-2/4 md:pl-20 lg:pl-32">
+                        <Typography
+                            variant="h1"
+                            color="white"
+                            className="mb-4 text-3xl md:text-4xl lg:text-5xl"
+                        >
+                            The Beauty of Nature
+                        </Typography>
+                        <Typography
+                            variant="lead"
+                            color="white"
+                            className="mb-12 opacity-80"
+                        >
+                            It is not so much for its beauty that the forest makes a claim
+                            upon men&apos;s hearts, as for that subtle something, that quality
+                            of air that emanation from old trees, that so wonderfully changes
+                            and renews a weary spirit.
+                        </Typography>
+                        <div className="flex gap-2">
+                            <Button size="lg" color="white">
+                                Explore
+                            </Button>
+                            <Button size="lg" color="white" variant="text">
+                                Gallery
+                            </Button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="relative h-full w-full">
+                <img
+                    src="https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80"
+                    alt="image 3"
+                    className="h-full w-full object-cover"
+                />
+                <div className="absolute inset-0 grid h-full w-full items-end bg-black/75">
+                    <div className="w-3/4 pl-12 pb-12 md:w-2/4 md:pl-20 md:pb-20 lg:pl-32 lg:pb-32">
+                        <Typography
+                            variant="h1"
+                            color="white"
+                            className="mb-4 text-3xl md:text-4xl lg:text-5xl"
+                        >
+                            The Beauty of Nature
+                        </Typography>
+                        <Typography
+                            variant="lead"
+                            color="white"
+                            className="mb-12 opacity-80"
+                        >
+                            It is not so much for its beauty that the forest makes a claim
+                            upon men&apos;s hearts, as for that subtle something, that quality
+                            of air that emanation from old trees, that so wonderfully changes
+                            and renews a weary spirit.
+                        </Typography>
+                        <div className="flex gap-2">
+                            <Button size="lg" color="white">
+                                Explore
+                            </Button>
+                            <Button size="lg" color="white" variant="text">
+                                Gallery
+                            </Button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </Carousel>
     )
 }
